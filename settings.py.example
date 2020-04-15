@@ -1,0 +1,22 @@
+# use os.environ['x'] to grab environment variables if you'd like
+# import os 
+
+# find here: twilio.com/console
+TWILIO_ACCOUNT_SID='ACxxx'
+TWILIO_AUTH_TOKEN='xxx'
+
+# create here: twilio.com/console/verify/services
+VERIFY_SERVICE_SID='VAxxxx'
+
+# replace with your number for testing
+# must be in E.164 format: https://www.twilio.com/docs/glossary/what-e164
+MODERATOR = '+18005551234'
+
+
+# add your number and the numbers of other people joining your call
+# could replace with your customer DB in production
+KNOWN_PARTICIPANTS = {
+  '+18005559876': 'Blathers',
+  '+18005554321': 'Mabel',
+  '+18005556789': 'Tommy'
+}
