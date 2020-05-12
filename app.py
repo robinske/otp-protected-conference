@@ -13,6 +13,7 @@ client = Client(
 
 VERIFY_SERVICE_SID = app.config['VERIFY_SERVICE_SID']
 MODERATOR = app.config['MODERATOR']
+KNOWN_PARTICIPANTS = app.config['KNOWN_PARTICIPANTS']
 
 
 def start_verification(caller):
@@ -68,7 +69,7 @@ def voice():
     caller = request.values.get('From')
 
     # verify the phone number has access to the call
-    name = app.config['KNOWN_PARTICIPANTS'].get(caller)
+    name = KNOWN_PARTICIPANTS.get(caller)
     if name is None:
         resp.say("Sorry, I don't recognize the number you're calling from.")
         return str(resp)
