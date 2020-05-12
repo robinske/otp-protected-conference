@@ -18,5 +18,6 @@ MODERATOR = '+18005551234'
 KNOWN_PARTICIPANTS = {
   '+18005559876': 'Blathers',
   '+18005554321': 'Mabel',
-  '+18005556789': 'Tommy'
+  '+18005556789': 'Tommy',
+  '+18005551234': 'Kelley'
 }
